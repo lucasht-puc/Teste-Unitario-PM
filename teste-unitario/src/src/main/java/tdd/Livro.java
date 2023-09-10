@@ -1,4 +1,4 @@
-package src.main.java.tdd;
+package tdd;
 
 public class Livro {
     

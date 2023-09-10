@@ -1,10 +1,11 @@
-package src.test.java;
+
+import tdd.Livro;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import src.main.java.tdd.Livro;
+
 
 public class LivroTest {
 
