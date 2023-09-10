@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import tdd.Livro;
+import tdd.Membro;
 
 class MembroTest {
 	Membro membro = new Membro(0, "Jose");
@@ -17,14 +18,16 @@ class MembroTest {
 	
 	@Test
 	void testMembroPegaEmprestado() {
-		membro.pegaEmprestado(0);
-		assertEquals(0, membro.getLivrosEmprestados(0));
+		membro.pegaEmprestado(livro);
+		assertEquals(0, membro.getLivrosEmprestados(0).getId());
+		
 	}
 	
 	@Test
 	void testMembroRetornaLivro() {
 		membro.retornaLivro(0);
 		assertNull(membro.getLivrosEmprestados(0));
+	
 	}
 
 }
