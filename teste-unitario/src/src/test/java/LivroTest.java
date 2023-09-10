@@ -1,4 +1,8 @@
+package src.test.java;
+
 import org.junit.Test;
+
+import src.main.java.tdd.Livro;
 
 public class LivroTest {
     @Test
