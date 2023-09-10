@@ -37,12 +37,15 @@ public class Membro {
     }
     
     public void pegaEmprestado(Livro livroEmprestado) {
+    	livroEmprestado.emprestarLivro();
     	this.livrosEmprestados.add(livroEmprestado);
     }
     
     public void retornaLivro(int idLivro) {
     	for(Livro i : this.livrosEmprestados) 
-    		if(i.getId() == idLivro)
+    		if(i.getId() == idLivro) {
+    			i.retornarLivro();
     			this.livrosEmprestados.remove(i);
+    		}
     }
 }
