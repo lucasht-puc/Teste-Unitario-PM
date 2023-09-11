@@ -31,4 +31,10 @@ public class LivroTest {
         livro.retornarLivro();
         assertEquals(false, livro.isEmprestado());
     }
+    @Test
+    public void testEmprestarLivroNaoDisponivel() {
+        Livro livro = new Livro(0, "Hobbit", "Tolkien");
+        livro.isEmprestado();
+        assertEquals(false, livro.isEmprestado);
+       
 }
